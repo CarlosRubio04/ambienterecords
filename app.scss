@@ -1,0 +1,267 @@
+// prefijos
+$prefixes: "webkit", "moz", "ms", "o", "none";
+@mixin prefix($property, $arguments) {
+ @each $prefix in $prefixes {
+   @if $prefix == "none" {
+     #{$property}: $arguments;
+     } @else {
+       -#{$prefix}-#{$property}: $arguments;
+     } 
+   }
+ }
+
+
+// colores 
+$green: #3B9C35;
+$white: #ffffff;
+$gray: #E2E2E2;
+$black: #000000;
+
+
+// Queries
+$break-small: 768px;
+
+
+body {
+	color: $black;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	@media screen and (max-width: $break-small) {
+		font-size: 12px;
+	}
+}
+a {
+	@include prefix(transition, all .5s ease-in-out);
+}
+h2 {
+	font-size: 45px;
+}
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba($green, .9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+.error {
+	color: lighten(red, 20%);
+}
+
+.u-green {
+	background-color: $green;
+}
+.u-white {
+	background-color: $white;
+}
+.u-back {
+	background: url(../img/left-center.png) left center, url(../img/right-bottom.png) right bottom;
+	background-repeat: no-repeat;
+}
+.u-imgBig {
+	width: 100%;
+}
+//Header
+.Header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.HeaderTopAction {
+	padding: 7px 0;
+	&Links{
+		list-style: none;
+		text-align: right;
+		padding-left: 0;
+		@media screen and (max-width: $break-small) {
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin-left: 10px;
+			@media screen and (max-width: $break-small) {
+				margin-left: 5px;
+				font-size: 12px;
+			}
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+
+.HeaderMenu {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0;
+	@media screen and (max-width: $break-small) {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	&Items {
+		width: 50%;
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			text-align: right;
+			@media screen and (max-width: $break-small) {
+				text-align: center;
+			}
+			li {
+				display: inline-block;
+				margin-right: 10px;
+				a {
+					color: $black;
+				}
+			}
+		}
+	}
+	&Social {
+		width: 50%;
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			text-align: right;
+			@media screen and (max-width: $break-small) {
+				text-align: center;
+			}	
+			li {
+				display: inline-block;
+				margin-right: 10px;
+				a {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+//Hero 
+.slider {
+	max-height: 90vh;
+	overflow: hidden;
+	position: relative;
+	&Logo{
+		position: absolute;
+		top: 40%;
+		left: calc(50% - 196px/2);
+		z-index: 1;
+	}
+}
+.carouselCaption {
+	background-color: rgba($green, .8);
+	text-align: left;
+	padding: 2em;
+	position: absolute;
+	top: 30%;
+	right: 0;
+	max-width: 400px;
+	color: $white;
+}
+//Intro
+.Intro {
+	padding: 40px 0;
+	border-top: 10px solid $green;
+	&Text {
+		margin-top: 20px;
+	}
+}
+
+//Productos 
+.Product {
+	position: relative;
+	width: 100%; 
+	border-bottom: 10px solid $green;
+	&Container {
+		width: 100%;
+	}
+	&Tittle {
+		position: absolute;
+		right: 50px;
+		top: 25%;
+		color: $white;
+	}
+	&Description {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		padding: 1em 1em 1em 4em;
+		color: $white;
+		background-color: rgba($green, .8);
+		max-width: 30vw;
+		font-size: 17px;
+	}
+}
+
+
+//Contacto
+.Contacto {
+	padding: 40px 0;
+	background-color: $gray;
+	.FancyTittle {
+		border-color: $white;
+		h2 {
+			background-color: $gray;
+		}
+		h1 {
+			color: $white;
+		}
+	}
+}
+
+.Footer {
+	padding: 40px 0;
+	@media screen and (max-width: $break-small) {
+	ul {
+			text-align: center;
+		}
+	}
+	&Menu{
+		list-style: none;
+		padding-left: 0;
+		li {
+			line-height: 4;
+			border-bottom: 2px solid $green;
+			max-width: 50%;
+			@media screen and (max-width: $break-small) {
+				max-width: 100%;
+			}
+			a {
+				color: $gray;
+			}
+		}
+	}
+	&Info {
+		list-style: none;
+		padding-left: 0;
+		li {
+			line-height: 2;
+			a {
+				color: $gray;
+			}
+		}
+	}
+	&Social {
+		list-style: none;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			margin-right: 8px;
+			a {
+				color: $gray;
+			}
+		}
+	}
+}
