@@ -40,12 +40,57 @@
 <section class="Product">
 	<div class="ProductContainer">
 		<img src="img/cocinas.jpg" alt="Product" class="u-imgBig">
-		<div class="ProductTittle">
+		<div class="ProductTittle u-TRight">
 			<h2>COCINAS</h2>
 		</div>
-		<div class="ProductDescription">
+		<div class="ProductDescription u-DLeft">
 			<p>
 				Utilizamo los mejores materiales en nuestras cocinas, garantizando la mejor calidad y uso.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="Product">
+	<div class="ProductContainer">
+		<img src="img/closet.jpg" alt="Product" class="u-imgBig">
+		<div class="ProductTittle u-TLeft">
+			<h2>CLOSET</h2>
+		</div>
+		<div class="ProductDescription u-DRight">
+			<p>
+				Espacios ideales para cumplir todas tus necesidades de la mejor manera. <br />
+				Optimiza al maximo tus espacios 
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<section class="Product">
+	<div class="ProductContainer">
+		<img src="img/toilets.jpg" alt="Product" class="u-imgBig">
+		<div class="ProductTittle u-TRight">
+			<h2>BAÑOS</h2>
+		</div>
+		<div class="ProductDescription u-DLeft">
+			<p>
+				La comodidad perfecta para arreglarte en las mañanas.
+			</p>
+		</div>
+	</div>
+</section>
+
+
+<section class="Product">
+	<div class="ProductContainer">
+		<img src="img/closet.jpg" alt="Product" class="u-imgBig">
+		<div class="ProductTittle u-TLeft">
+			<h2>CENTRO DE <br/>ENTRETENIMIENTO</h2>
+		</div>
+		<div class="ProductDescription u-DRight">
+			<p>
+				Es tu espacio, disfrutalo de la mejor manera
 			</p>
 		</div>
 	</div>

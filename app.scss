@@ -1,14 +1,14 @@
 // prefijos
 $prefixes: "webkit", "moz", "ms", "o", "none";
 @mixin prefix($property, $arguments) {
- @each $prefix in $prefixes {
-   @if $prefix == "none" {
-     #{$property}: $arguments;
-     } @else {
-       -#{$prefix}-#{$property}: $arguments;
-     } 
-   }
- }
+	@each $prefix in $prefixes {
+		@if $prefix == "none" {
+			#{$property}: $arguments;
+			} @else {
+				-#{$prefix}-#{$property}: $arguments;
+			} 
+		}
+	}
 
 
 // colores 
@@ -34,7 +34,7 @@ a {
 	@include prefix(transition, all .5s ease-in-out);
 }
 h2 {
-	font-size: 45px;
+	font-size: 38px;
 }
 .loader {
 	position: fixed;
@@ -189,14 +189,10 @@ h2 {
 	}
 	&Tittle {
 		position: absolute;
-		right: 50px;
-		top: 25%;
 		color: $white;
 	}
 	&Description {
 		position: absolute;
-		top: 50%;
-		left: 0;
 		padding: 1em 1em 1em 4em;
 		color: $white;
 		background-color: rgba($green, .8);
@@ -205,7 +201,23 @@ h2 {
 	}
 }
 
+.u-TRight {
+	right: 50px;
+	top: 25%;
+}
+.u-DLeft {
+	top: 50%;
+	left: 0;
+}
 
+.u-TLeft {
+	left: 50px;
+	top: 25%;
+}
+.u-DRight{
+	top: 50%;
+	right: 0;
+}
 //Contacto
 .Contacto {
 	padding: 40px 0;
@@ -224,7 +236,7 @@ h2 {
 .Footer {
 	padding: 40px 0;
 	@media screen and (max-width: $break-small) {
-	ul {
+		ul {
 			text-align: center;
 		}
 	}
