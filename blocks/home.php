@@ -96,6 +96,74 @@
 	</div>
 </section>
 
+
+<section class="Intro u-back">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<h2>SERVICIOS <br/> COMPLEMENTARIOS</h2>
+				<div id="cosa" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="img/slide-1.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="img/slide-2.jpg" alt="First slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#cosa" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#cosa" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<ul>
+					<li>Aplicación de pintura en interiores</li>
+					<li>Aplicación de estuco en paredes y techos</li>
+					<li>Aplicación de estuco veneciano</li>
+					<li>Aplicación de pañete de muros y techos</li>
+					<li>Instalación de cerámica en paredes</li>
+					<li>Instalación de porcelanato en pisos</li>
+					<li>Instalación dry wall en techos</li>
+					<li>Instalación de eterboard en paredes</li>
+					<li>Instalación de pisos laminados</li>
+					<li>Nivelación de pisos</li>
+					<li>Instalación y cambio de plomería</li>
+					<li>Cambio de lavamanos y sanitarios (porcelana sanitaria)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="Intro u-back">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img src="img/process-1.jpg" alt="1" class="img-fluid">
+				<span class="step">1</span>
+				<p class="text-center">Inicia el proyecto de tus sueños con la  Visita técnica  & Diseño en vivo personalizado</p>
+			</div>
+			<div class="col">
+				<img src="img/process-2.jpg" alt="1" class="img-fluid">
+				<span class="step">2</span>
+				<p class="text-center">Producción y elaboración del proyecto de tus sueños</p>
+			</div>
+			<div class="col">
+				<img src="img/process-3.jpg" alt="1" class="img-fluid">
+				<span class="step">3</span>
+				<p class="text-center">La entrega de tu Ambiente en tiempo Records </p>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="Contacto" id="contacto">
 	<div class="container">
 		<div class="row">
